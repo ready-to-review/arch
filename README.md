@@ -42,11 +42,11 @@ stateDiagram-v2
 
 ## Virtual Cluster
 
-Similar to Netflix's architecture, our Virtual Cluster is made up of distributed nodes running FreeBSD 15.0-CURRENT, a highly performant and secure environment. The host itself is extremely minimalist with no 3rd party packages installed. These nodes only exist to run isolated verifiable workloads.
+Similar to Netflix's architecture, our Virtual Cluster is made up of distributed nodes running FreeBSD 15.0-CURRENT, a highly performant and relatively secure environment. The host itself is extremely minimalist with no 3rd party packages installed. These nodes only exist to run isolated verifiable workloads.
 
 ### V1
 
-Standard POSIX isolation and/or Jails (early development). Binaries manually pushed.
+Jail-based isolation with locally built binaries. Kind of lame.
 
 ### V2
 
